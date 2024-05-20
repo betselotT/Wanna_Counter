@@ -1,5 +1,20 @@
 <script>
 	import Player from "./Player.svelte";
+	let num;
+	let score;
+	let playerOne = 5;
+	let playerTwo = 5;
+
+	function updateOne(e) {
+		const update = e.detail;
+		playerOne += update;
+	}
+
+	function updateTwo(e) {
+		const update = e.detail;
+		playerTwo += update;
+	}
+
 </script>
 
 <main>
@@ -16,8 +31,8 @@
 		<div class="counter">
 			<h1>Counter Game</h1>
 			<div class="options">
-				<Player num={1} />
-				<Player num={2} />
+				<Player on:points={updateOne} num={1} score={playerOne} />
+				<Player on:points={updateTwo} num={2} score={playerTwo} />
 			</div>
 		</div>
 	</div>
