@@ -34,6 +34,7 @@
 			</div>
 
 		</div>
+		<hr>
 		<div class="counter">
 			<h1>Counter Game</h1>
 			<div class="options">
@@ -42,6 +43,7 @@
 			</div>
 			<button on:click={again}>Play Again!</button>
 		</div>
+		<hr>
 	</div>
 </main>
 
@@ -67,7 +69,7 @@
 	}
 	.options {
 		display: flex;
-		
+		gap: 80px;
 	}
 	.counter {
 		padding: 20px;

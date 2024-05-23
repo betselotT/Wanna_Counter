@@ -39,6 +39,7 @@
         color: white;
         font-family: monospace;
         font-weight: bold;
+        margin: 5px;
     }
     .plus {
         background-color: seagreen;
